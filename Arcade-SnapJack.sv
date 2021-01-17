@@ -133,7 +133,6 @@ assign VIDEO_ARY =  (!ar) ? ( 8'd3) : 12'd0;
 `include "build_id.v" 
 localparam CONF_STR = {
 	"A.SNPJCK;;",
-	"H0O1,Aspect Ratio,Original,Wide;",
 	"H0O67,Aspect ratio,Original,Full Screen,[ARC1],[ARC2];",
 	"O35,Scandoubler Fx,None,HQ2x,CRT 25%,CRT 50%,CRT 75%;",
 	"-;",
@@ -143,7 +142,7 @@ localparam CONF_STR = {
 	"-;",
 	"R0,Reset;",
 	"J1,Start 1P,Start 2P,Coin;",
-        "jn,Start,Select,R;",
+	"jn,Start,Select,R;",
 	"V,v",`BUILD_DATE
 };
 wire [7:0] m_dip = {~status[14:13],1'b1,1'b1,status[12],1'b0,~status[9:8]};
